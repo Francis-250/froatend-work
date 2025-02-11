@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../asset/style.css" />
+  </head>
+  <body>
+    <div class="flex flex-col">
+      <!-- Navbar -->
+      <div class="bg-gray-900 p-3 text-white flex items-center justify-between">
+        <header class="text-xl uppercase font-bold">EAT SCAPE</header>
+        <!-- Desktop Menu -->
+        <div
+          class="md:flex hidden items-center gap-10 menu-link text-white capitalize text-lg"
+        ></div>
+        <!-- Mobile Menu -->
+        <div
+          class="absolute hidden mobile-container top-0 left-0 md:hidden flex items-center justify-center h-screen w-full bg-black/70 text-white"
+        >
+          <div class="flex flex-col gap-2 bg-white w-[90%] p-3 rounded">
+            <div
+              class="close flex items-center justify-center w-[3em] h-[3em] rounded-full p-2 bg-gray-900 cursor-pointer transition-all duration-500"
+            >
+              <box-icon name="x" color="white"></box-icon>
+            </div>
+            <div
+              class="flex flex-col items-center gap-10 mobile-links text-gray-900 capitalize text-lg"
+            ></div>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="md:flex hidden items-center justify-center p-3 border rounded hover:bg-gray-900 hover:text-white cursor-pointer transition-all duration-500"
+        >
+          Login
+        </div>
+        <div
+          class="open flex md:hidden items-center justify-center p-2 border rounded hover:bg-gray-900 hover:text-white cursor-pointer transition-all duration-500"
+        >
+          <box-icon name="menu-alt-right" color="white"></box-icon>
+        </div>
+      </div>
+      <!-- content -->
+    </div>
+    <!-- script -->
+    <script src="../script/script.js"></script>
+  </body>
+</html>
