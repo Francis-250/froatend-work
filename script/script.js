@@ -7,12 +7,14 @@ let mobileContainer = document.querySelector(".mobile-container");
 let leftHero = document.querySelector(".left-hero");
 let meal1 = document.querySelector(".meal-1");
 let dishes1 = document.querySelector(".dishes-1");
+let allMeal = document.querySelector(".all-meal");
 
 let desktopMenu = "";
 let mobileMenu = "";
 let left = "";
 let mea1 = "";
 let dshes = "";
+let allmea = "";
 
 const menu = [
   { label: "Home", link: "index.html" },
@@ -213,3 +215,22 @@ dishes.map((dish) => {
   dshes += dishs;
 });
 dishes1.innerHTML = dshes;
+
+meals.map((meal) => {
+  let mealContet = `<div class="p-3 flex flex-col shadow-md rounded border-t">
+            <img src=${meal.image} alt="" />
+            <div class="flex flex-col gap-2">
+              <header class="text-xl mb-2 text-[#D32F21]">${meal.name}</header>
+              <p class="text-lg">Price : ${meal.price}</p>
+            </div>
+            <div class="flex justify-end">
+              <div
+                class="flex items-center justify-center border rounded-full cursor-pointer transition-all duration-500"
+              >
+                <box-icon name="plus" color="black"></box-icon>
+              </div>
+            </div>
+          </div>`;
+  allmea += mealContet;
+});
+allMeal.innerHTML = allmea;
