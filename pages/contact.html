@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <title>Home</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="../asset/style.css" />
   </head>
   <body>
-    <div class="flex flex-col">
+    <div class="flex flex-col gap-2">
       <!-- Navbar -->
       <div class="bg-gray-900 p-3 text-white flex items-center justify-between">
         <header class="text-xl uppercase font-bold">EAT SCAPE</header>
@@ -45,6 +45,71 @@
         </div>
       </div>
       <!-- content -->
+      <div class="h-[89vh] flex items-center w-full">
+        <div
+          class="flex w-full md:flex-row flex-col items-center p-3 justify-between md:px-[2em] lg:px-[7em] mt-10"
+        >
+          <div class="flex flex-col gap-2 md:w-[55%] w-full">
+            <header
+              class="text-2xl uppercase font-bold mb-3 text-green-900 flex flex-col"
+            >
+              contact us Here
+              <div class="p-1 bg-green-900 w-20 mt-2 rounded-full"></div>
+            </header>
+            <form class="p-3 grid grid-cols-2 gap-2">
+              <div class="flex flex-col gap-2">
+                <label class="text-lg capitalize">first Name</label>
+                <input
+                  type="text"
+                  class="rounded border-green-900 border w-full p-2 outline-none"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-lg capitalize">Last Name</label>
+                <input
+                  type="text"
+                  class="rounded border-green-900 border w-full p-2 outline-none"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-lg capitalize">email</label>
+                <input
+                  type="text"
+                  class="rounded border-green-900 border w-full p-2 outline-none"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-lg capitalize"
+                  >phone Number (optional)</label
+                >
+                <input
+                  type="text"
+                  class="rounded border-green-900 border w-full p-2 outline-none"
+                />
+              </div>
+              <div class="flex flex-col gap-2 col-span-2">
+                <label class="text-lg capitalize">feedback</label>
+                <textarea
+                  class="text-lg capitalize h-[7em] resize-none rounded outline-none p-2 border-green-900 border"
+                ></textarea>
+              </div>
+              <div class="flex flex-col gap-2 col-span-2">
+                <button
+                  class="rounded hover:border hover:bg-transparent bg-green-900 text-white hover:text-green-900 cursor-pointer w-full p-3"
+                >
+                  Send Feedback
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="flex items-center justify-center md:w-[45%] w-full">
+            <img
+              src="../asset/images/food_9.png"
+              class="h-[20em] w-[20em] object-cover border hover:scale-109 transition-all duration-500"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- script -->
     <script src="../script/script.js"></script>
